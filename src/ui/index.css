@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cyan-500: hsl(180, 29%, 50%);
+  --color-cyan-50-bg: hsl(180, 52%, 96%); /* Background */
+  --color-cyan-100-filter: hsl(180, 31%, 95%); /* Filter Tablets */
+  --color-gray-500: hsl(180, 8%, 52%);
+  --color-gray-800: hsl(180, 14%, 20%);
+}
+
+@layer base {
+  * {
+    font-family: "League Spartan", serif;
+  }
+}
+
+@layer components {
+  .header-item-span {
+    @apply uppercase text-sm block px-2 rounded-full leading-loose text-white;
+  }
+
+  .circle {
+    @apply inline-block w-1 h-1 bg-gray-500 rounded-full mb-0.5 mx-2;
+  }
+}
